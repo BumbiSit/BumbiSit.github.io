@@ -1,1 +1,38 @@
-"Pirmais uzdevums timekla pamatos. Iesaistits ari git." 
+Apskatīt elementu
+pozicionēšanas video un izveidot mājas lapu, kurā ir iekļautas sekojošas
+lietas:
+
+- Jūsu mājas lapas logotips un favicon.ico
+**(1 punkts)**;
+
+- Mājas lapa sastāv no vismaz trim kastēm
+(piem. izvēlne, logotips, autora un galvenā satura kaste) **(1 punkts)**;
+
+- Lapa sastāv no trim sadaļām **(4 punkti)**:
+
+* **Galerija**- kur ir ievietotas minimums četras bildes. Uzlišķinot uz tās bilde atveras
+jaunā cilnē un pilnizmērā;
+
+* **Anketa**
+–
+lapā tiek iekļauti formas elementi;
+
+* **Kontakti**– Informāciju par jūsu kontaktinformāciju (epasts, vārds, uzvārds u.c.);
+
+* **Galvenā
+lapa**– informācija par ko ir mājas lapa;
+
+- Mājas lapā nepieciešams ievērot vienotu
+stilu un pamata saturu nepieciešams centrēt mājas lapas vidū **(1 punkts)**;
+
+- Mājas lapai jābūt par „sakarīgu” tēmu **(1 punkts)**;
+
+- Viss dizains un elementu novietojums
+tiek veidots ar css **(1 punkts)**;
+
+- Nepieciešams iesūtīt *.zip arhīvu
+(vards_uzvards_grupa), kura satur jūsu mājas lapas failus. Ja netiek ievērots
+šis nosacījums, darbs netiek vērtēts;
+
+- Kopējais vizuālais noformējums un koda
+kvalitāte **(1 punkts)**.
