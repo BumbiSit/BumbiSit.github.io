@@ -8,7 +8,6 @@
 // failus. T?d?? es saturu no template failiem saliku index fail? template
 // tagos.
 
-var date; // Tais?m glob?lo main?go, jo tiks izmantots vair?k?s funkcij?s
 var timeInit=false;
 var timeTick=0;
 $(document).ready(function(){
@@ -23,7 +22,6 @@ $(document).ready(function(){
         setTimeout(function(){loadPage($(_this).data("saturs"));},800);
     });
 
-    date = new Date(); //Date objekts, ar kuru var dab?t laiku
     setInterval(updateTime,1000); //Uzs?kam atk?rtoto taimeri, kurš atjaunos laiku
 });
 // Funkcija, kas iel?d?s html no failiem (nu jau <template> elementiem) un ieliks to content element?.
@@ -38,8 +36,10 @@ function updateTime(){
         timeInit=true;
         $("li#time").css("opacity",1);
     }
+    var date = new Date(); //Date objekts, ar kuru var dab?t laiku
     var h = date.getHours();
     var m = date.getMinutes();
+    m = (m < 10 ? '0'+m : m); //Min?t?m pieliekam kl?t 0, ja vienskaitl?
     $("li#time").html(h+(timeTick == 0 ? ":" : " ")+m); // kols mirgos katru sekundi
     if (timeTick==0) timeTick=1;
     else timeTick=0;
