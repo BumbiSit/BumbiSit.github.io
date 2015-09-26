@@ -1,3 +1,7 @@
+/* ------[ PAMATA CSS ]------ */
+*{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 body{
     margin:0;
     padding:0;
@@ -6,16 +10,24 @@ body{
 a{
     text-decoration: none;
 }
-
 #wrap{
-    width:980px;
+    width:900px; /* Lapas platums */
     height:auto;
-    margin:30px auto;
+    margin-left:auto; margin-right:auto;
+    margin-top:30px;
+    min-height: 100%;
+    position: relative;
 }
+/* -------------------------- */
+
+/* ----[ GALVEN? IZV?LNE]---- */
 #menu{
     width:100%;
     height: 60px;
     background-color:#FFF;
+    border-left:8px solid #00BDF2;
+    border-right:8px solid #00BDF2;
+    box-sizing: border-box;
 }
 #menu ul{
     margin:0;
@@ -25,6 +37,7 @@ a{
 #menu ul li{
     float:left;
 }
+/* --- LOGO */
 #menu ul li#logo{
     height:60px;
     width:100px;
@@ -34,11 +47,25 @@ a{
     background-repeat: no-repeat;
     transition: background-color 5s;
 }
-#menu ul li#logo:hover{
+#menu ul li#logo:active{
     background-color:#444349;
 }
+/* ------- */
+/* - LAIKS */
+#menu ul li#time{
+    float:right;
+    color:#FFF;
+    font-size:30px;
+    padding-left:30px;
+    padding-right:20px;
+    height: 100%;
+    background-color: #00BDF2;
+    line-height: 60px;
+    opacity:0;
+    transition: opacity 1s;
+}
+/* ------- */
 #menu ul li a{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color:#00BDF2;
     line-height:60px;
     padding:21px;
@@ -49,6 +76,73 @@ a{
 #menu ul li a:hover,#menu ul li a.active{
     color:#FFF;
     background-color:#00BDF2;
-    padding-bottom:27px;
+    padding-bottom:57px;
     padding-top:26px;
 }
+/* -------------------------- */
+
+/* ---[ GALVENAIS SATURS ]--- */
+#main{
+    width:100%;
+    height:auto;
+    overflow: auto;
+    background-color:#FFF;
+    margin-top:30px;
+    border-top:8px solid #00BDF2;
+    border-bottom:8px solid #00BDF2;
+    max-height: 0px;
+    transition: max-height 0.8s;
+    overflow: hidden;
+}
+#main #content{
+    margin-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+#main #content h1{
+    color:#00BDF2;
+    border-bottom:5px solid #00BDF2;
+}
+#main #content .article{
+    padding-top:10px;
+    margin-bottom:50px;
+    color:#444349;
+}
+#main #content .article .title{
+    font-size:24px;
+    background-color:#00BDF2;
+    padding:10px;
+    color:#FFF;
+}
+#main #content .article .content{
+    border:5px solid #00BDF2;
+    padding:10px;
+    text-align:justify;
+    font-size:15px;
+}
+#main #content .article .date{
+    float:right;
+    color:#FFF;
+    background-color:#00BDF2;
+    padding:5px;
+    font-size:13px;
+}
+/* -------------------------- */
+
+/* -------[ FOOTERIS ]------- */
+#footer{
+    width:100%;
+    height:50px;
+    background-color:#FFF;
+    margin-top:30px;
+    border-left:8px solid #00BDF2;
+    border-right:8px solid #00BDF2;
+    box-sizing: border-box;
+}
+#footer span{
+    line-height: 50px;
+    margin-left:50px;
+    color:#00BDF2;
+    font-size:12px;
+}
+/* -------------------------- */
