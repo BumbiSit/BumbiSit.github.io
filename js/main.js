@@ -5,8 +5,8 @@
 // !README!
 // S?kum? tika paredz?ts, ka template map? st?v?s katras lapas HTML,
 // bet lok?li taisot tas nav iesp?jams, jo p?rl?ks ne?auj l?d?t lok?los
-// failus. T?d?? es saturu no template failiem saliku index fail? template
-// tagos.
+// failus ar JS. T?d?? es saturu no template failiem saliku index fail?
+// template tagos.
 
 var timeInit=false;
 var timeTick=0;
