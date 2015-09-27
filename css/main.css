@@ -45,10 +45,10 @@ a{
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    transition: background-color 5s;
+    transition: background-color 5s; /* EASTER EGG */
 }
 #menu ul li#logo:active{
-    background-color:#444349;
+    background-color:#444349; /* EASTER EGG */
 }
 /* ------- */
 /* - LAIKS */
@@ -83,7 +83,7 @@ a{
 #menu ul li a:not(.active):hover{
     color:#FFF;
     background-color:#00BDF2;
-    padding-bottom:25px;
+    padding-bottom:26px;
     padding-top:26px;
 }
 /* -------------------------- */
@@ -184,6 +184,10 @@ a{
     border-left:8px solid #00BDF2;
     border-right:8px solid #00BDF2;
     box-sizing: border-box;
+    transition: border-width 3s linear; /* EASTER EGG */
+}
+#footer:active{
+    border-width: 200px; /* EASTER EGG */
 }
 #footer span{
     line-height: 50px;
