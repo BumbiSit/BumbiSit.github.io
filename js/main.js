@@ -10,14 +10,16 @@
 
 var timeInit=false;
 var timeTick=0;
+var canClick=true;
 $(document).ready(function(){
     loadPage("news"); // P?c noklus?juma iel?d?s "news" saturu
 
     $("#menu ul li a").click(function () {
-        if ($(this).hasClass("active")) return 0;
+        if ($(this).hasClass("active") || !canClick) return 0;
+        $("#main").css("max-height","0px");
+        canClick=false;
         $("#menu ul li a.active").removeClass("active");
         $(this).addClass("active");
-        $("#main").css("max-height","0px");
         var _this = this;
         setTimeout(function(){loadPage($(_this).data("saturs"));},800);
     });
@@ -27,7 +29,8 @@ $(document).ready(function(){
 // Funkcija, kas iel?d?s html no failiem (nu jau <template> elementiem) un ieliks to content element?.
 function loadPage(pageName){
     $("#main > #content").html($("template[name="+pageName+"]").html());
-    $("#main").css("max-height","2000px");
+    $("#main").css("max-height","1000px"); // Pie?emsim, ka šis elements nekad neb?s gar?ks par 1000px. P.S. Vajag anim?cijas ;)
+    canClick=true;
 }
 // Funkcija, kas darbina menu laiku
 function updateTime(){
