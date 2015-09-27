@@ -73,10 +73,16 @@ a{
     font-weight: 500;
     transition:all 0.3s;
 }
-#menu ul li a:hover,#menu ul li a.active{
+#menu ul li a.active{
     color:#FFF;
     background-color:#00BDF2;
     padding-bottom:57px;
+    padding-top:26px;
+}
+#menu ul li a:not(.active):hover{
+    color:#FFF;
+    background-color:#00BDF2;
+    padding-bottom:25px;
     padding-top:26px;
 }
 /* -------------------------- */
@@ -110,9 +116,11 @@ a{
 }
 #main #content .article .title{
     font-size:24px;
-    background-color:#00BDF2;
+    background-color:#FFF;
     padding:10px;
-    color:#FFF;
+    padding-bottom:0px;
+    color:#00BDF2;
+    text-transform: uppercase;
 }
 #main #content .article .content{
     border:5px solid #00BDF2;
