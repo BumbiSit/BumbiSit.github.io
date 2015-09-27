@@ -63,6 +63,7 @@ a{
     line-height: 60px;
     opacity:0;
     transition: opacity 1s;
+    border-left:10px solid #444349;
 }
 /* ------- */
 #menu ul li a{
