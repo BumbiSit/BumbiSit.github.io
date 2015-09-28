@@ -37,7 +37,7 @@
 <template name="news">
     <h1>Tehnoloģiju blogs</h1>
     <div class="article">
-        <div class="title">Jaunais Apple iPhone 6s ir oficiāli iznācis!</div>
+        <div class="title">Jaunais Samsung Galaxy S6 ir iznācis!</div>
         <div class="content">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis culpa,
                 cupiditate dicta doloribus ducimus illum labore molestiae molestias neque non quasi
@@ -102,7 +102,7 @@
     </div>
 </template>
 <template name="gallery">
-    <h1>Tehnoloģiju galerija</h1>
+    <h1>Tālruņu galerija</h1>
     <div class="gallery">
         <div class="name">Galaxy S6</div>
         <div class="container">
@@ -126,9 +126,85 @@
     </div>
 </template>
 <template name="survey">
-    <h1>Šeit būs anketa!</h1>
+    <h1>Anketa</h1>
+    <table id="survey" cellpadding="10px" cellspacing="0px">
+        <thead>
+            <tr>
+                <td colspan="2" style="text-align:left;">Aizpildiet anketu un izsakiet viedokli par mums! Pateicoties Jums, mēs varēsim uzlabot sevi attiecīgi pēc Jūsu izteiktās kritikas. <br> Lūdzams izteikt konstruktīvu kritiku!</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vārds</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Uzvārds</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>E-pasts</td>
+                <td><input type="email" /></td>
+            </tr>
+            <tr>
+                <td>Kā atradāt šo vietni?</td>
+                <td>
+                    <select>
+                        <option selected>Izvēlieties variantu</option>
+                        <option>Draugi ieteica</option>
+                        <option>Atradu Googlē</option>
+                        <option>Redzēju reklāmu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Kāds ir Jūsu vecums?</td>
+                <td>
+                    <select>
+                        <option selected>Izvēlieties variantu</option>
+                        <option>12 un zemāk</option>
+                        <option>12-16</option>
+                        <option>16-18</option>
+                        <option>18-22</option>
+                        <option>22-30</option>
+                        <option>30-40</option>
+                        <option>40 un vairāk</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Uz cik Jūs novērtētu šo vietni?</td>
+                <td>
+                    <select>
+                        <option selected>Izvēlieties variantu</option>
+                        <option>1 (Nav jēga)</option>
+                        <option>2 (Graujoši)</option>
+                        <option>3 (Ļoti slikti)</option>
+                        <option>4 (Slikti)</option>
+                        <option>5 (Vidēji)</option>
+                        <option>6 (Gandrīz labi)</option>
+                        <option>7 (Labi)</option>
+                        <option>8 (Ļoti labi)</option>
+                        <option>9 (Teicami)</option>
+                        <option>10 (Izcili)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Izsakiet savu viedokli rakstiski</td>
+                <td>
+                    <textarea cols="30" rows="10" style="resize:vertical"></textarea>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input class="styled" type="button" value="Iesūtīt"/></td>
+            </tr>
+        </tfoot>
+    </table>
 </template>
 <template name="contacts">
-    <h1>Šeit būs kontaktinformācija!</h1>
+    <h1></h1>
 </template>
 </html>
