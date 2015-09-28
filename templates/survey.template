@@ -1,0 +1,77 @@
+<h1>Anketa</h1>
+    <table id="survey" cellpadding="10px" cellspacing="0px">
+        <thead>
+            <tr>
+                <td colspan="2" style="text-align:left;">Aizpildiet anketu un izsakiet viedokli par mums! Pateicoties Jums, m?s var?sim uzlabot sevi attiec?gi p?c J?su izteikt?s kritikas. <br> L?dzams izteikt konstrukt?vu kritiku!</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>V?rds</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Uzv?rds</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>E-pasts</td>
+                <td><input type="email" /></td>
+            </tr>
+            <tr>
+                <td>K? atrad?t šo vietni?</td>
+                <td>
+                    <select>
+                        <option selected>Izv?lieties variantu</option>
+                        <option>Draugi ieteica</option>
+                        <option>Atradu Googl?</option>
+                        <option>Redz?ju rekl?mu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>K?ds ir J?su vecums?</td>
+                <td>
+                    <select>
+                        <option selected>Izv?lieties variantu</option>
+                        <option>12 un zem?k</option>
+                        <option>12-16</option>
+                        <option>16-18</option>
+                        <option>18-22</option>
+                        <option>22-30</option>
+                        <option>30-40</option>
+                        <option>40 un vair?k</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Uz cik J?s nov?rt?tu šo vietni?</td>
+                <td>
+                    <select>
+                        <option selected>Izv?lieties variantu</option>
+                        <option>1 (Nav j?ga)</option>
+                        <option>2 (Graujoši)</option>
+                        <option>3 (?oti slikti)</option>
+                        <option>4 (Slikti)</option>
+                        <option>5 (Vid?ji)</option>
+                        <option>6 (Gandr?z labi)</option>
+                        <option>7 (Labi)</option>
+                        <option>8 (?oti labi)</option>
+                        <option>9 (Teicami)</option>
+                        <option>10 (Izcili)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Izsakiet savu viedokli rakstiski</td>
+                <td>
+                    <textarea cols="30" rows="10" style="resize:vertical"></textarea>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input class="styled" type="button" value="Ies?t?t"/></td>
+            </tr>
+        </tfoot>
+    </table>

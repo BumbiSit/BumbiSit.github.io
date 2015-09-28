@@ -1,0 +1,22 @@
+<h1>T?lru?u galerija</h1>
+    <div class="gallery">
+        <div class="name">Galaxy S6</div>
+        <div class="container">
+            <ul>
+                <li><a target="_blank" href="https://cdn2.vox-cdn.com/thumbor/mPWCe0qOA1GRjJpFe8RojqCBPp4=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456662/galaxys6-9.0.png"><img src="https://cdn2.vox-cdn.com/thumbor/mPWCe0qOA1GRjJpFe8RojqCBPp4=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456662/galaxys6-9.0.png" width="200px"/></a></li>
+                <li><a target="_blank" href="https://cdn0.vox-cdn.com/thumbor/_U-4-AP9r__zEldu3TGdMmMS8XQ=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456692/galaxys6-30.0.png"><img src="https://cdn0.vox-cdn.com/thumbor/_U-4-AP9r__zEldu3TGdMmMS8XQ=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456692/galaxys6-30.0.png" width="200px"/></a></li>
+                <li><a target="_blank" href="https://cdn2.vox-cdn.com/thumbor/IEokbHV3kDL6mXJFj_GF2l2Wnf8=/2200x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557946/verge-021.0.jpg"><img src="https://cdn2.vox-cdn.com/thumbor/IEokbHV3kDL6mXJFj_GF2l2Wnf8=/2200x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557946/verge-021.0.jpg" width="200px"/></a></li>
+                <li><a target="_blank" href="https://cdn3.vox-cdn.com/thumbor/V9_7LGTsGGq6Jmj-dcclDLWFC8s=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557966/verge-016.0.jpg"><img src="https://cdn3.vox-cdn.com/thumbor/V9_7LGTsGGq6Jmj-dcclDLWFC8s=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557966/verge-016.0.jpg" width="200px"/></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="name">Apple iPhone 6</div>
+        <div class="container">
+            <ul>
+                <li><a target="_blank" href="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798892/IMG_1274.0.jpg"><img src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798892/IMG_1274.0.jpg" width="200px"/></a></li>
+                <li><a target="_blank" href="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798874/DSCF1913.0.jpg"><img src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798874/DSCF1913.0.jpg" width="200px"/></a></li>
+                <li><a target="_blank" href="https://cdn2.vox-cdn.com/thumbor/emFCqprqkSmutffDFc6rR8jmZ2E=/0x122:2039x1269/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46483548/iphone-verge-stock-1191.0.0.jpg"><img src="https://cdn2.vox-cdn.com/thumbor/emFCqprqkSmutffDFc6rR8jmZ2E=/0x122:2039x1269/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46483548/iphone-verge-stock-1191.0.0.jpg" width="200px"/></a></li>
+            </ul>
+        </div>
+    </div>
