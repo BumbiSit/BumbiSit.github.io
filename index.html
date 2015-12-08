@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <script src="./js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css"/>
     <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Sākums | T-News</title>
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" class="container">
         <div id="menu">
             <ul>
                 <li id="logo"></li> <!-- Logo menu -->
@@ -18,7 +17,7 @@
                 <li><a href="#" data-saturs="gallery">Galerija</a></li>
                 <li><a href="#" data-saturs="survey">Anketa</a></li>
                 <li><a href="#" data-saturs="contacts">Kontakti</a></li>
-                <li id="time"></li> <!-- Laiks menu -->
+                <li id="time" class="hidden-xs"></li> <!-- Laiks menu -->
             </ul>
         </div>
         <div id="main">
@@ -31,7 +30,9 @@
             <span style="float:right;margin-right:30px;"><b>Veidoja:</b> Silvestrs Prancāns</span>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
 </body>
 <!-------------------------------------- ŠEIT IR VISS LAPU SATURS --------------------------------------
 ---------------------------------------- PASKAIDROJUMS IR JS FAILĀ! ---------------------------------->
@@ -106,7 +107,7 @@
     <h1>Tālruņu galerija</h1>
     <div class="gallery">
         <div class="name">Galaxy S6</div>
-        <div class="container">
+        <div class="container_">
             <ul>
                 <li><a target="_blank" href="https://cdn2.vox-cdn.com/thumbor/mPWCe0qOA1GRjJpFe8RojqCBPp4=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456662/galaxys6-9.0.png"><img src="https://cdn2.vox-cdn.com/thumbor/mPWCe0qOA1GRjJpFe8RojqCBPp4=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456662/galaxys6-9.0.png" width="200px"/></a></li>
                 <li><a target="_blank" href="https://cdn0.vox-cdn.com/thumbor/_U-4-AP9r__zEldu3TGdMmMS8XQ=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456692/galaxys6-30.0.png"><img src="https://cdn0.vox-cdn.com/thumbor/_U-4-AP9r__zEldu3TGdMmMS8XQ=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3456692/galaxys6-30.0.png" width="200px"/></a></li>
@@ -117,7 +118,7 @@
     </div>
     <div class="gallery">
         <div class="name">Apple iPhone 6</div>
-        <div class="container">
+        <div class="container_">
             <ul>
                 <li><a target="_blank" href="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798892/IMG_1274.0.jpg"><img src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798892/IMG_1274.0.jpg" width="200px"/></a></li>
                 <li><a target="_blank" href="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798874/DSCF1913.0.jpg"><img src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/798874/DSCF1913.0.jpg" width="200px"/></a></li>
@@ -149,29 +150,15 @@
                     <td><input type="email" /></td>
                 </tr>
                 <tr>
-                    <td>Kā atradāt šo vietni?</td>
+                    <td>Pasta Indekss</td>
                     <td>
-                        <select>
-                            <option selected>Izvēlieties variantu</option>
-                            <option>Draugi ieteica</option>
-                            <option>Atradu Googlē</option>
-                            <option>Redzēju reklāmu</option>
-                        </select>
+                        <input type="text" />
                     </td>
                 </tr>
                 <tr>
                     <td>Kāds ir Jūsu vecums?</td>
                     <td>
-                        <select>
-                            <option selected>Izvēlieties variantu</option>
-                            <option>12 un zemāk</option>
-                            <option>12-16</option>
-                            <option>16-18</option>
-                            <option>18-22</option>
-                            <option>22-30</option>
-                            <option>30-40</option>
-                            <option>40 un vairāk</option>
-                        </select>
+                        <input type="number" />
                     </td>
                 </tr>
                 <tr>

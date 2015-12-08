@@ -16,6 +16,12 @@ $(document).ready(function(){
 
     $("#menu ul li a").click(function () {
         if ($(this).hasClass("active") || !canClick) return 0;
+        if ($(window).width() < 992) {
+            $("#menu ul li a.active").removeClass("active");
+            $(this).addClass("active");
+            $("#main > #content").html($("template[name="+($(this).data("saturs"))+"]").html());
+            return 0;
+        }
         $("#main").css("max-height","0px");
         canClick=false;
         $("#menu ul li a.active").removeClass("active");
@@ -32,7 +38,7 @@ $(document).ready(function(){
 // Funkcija, kas ielādēs html no failiem (nu jau <template> elementiem) un ieliks to content elementē.
 function loadPage(pageName){
     $("#main > #content").html($("template[name="+pageName+"]").html());
-    $("#main").css("max-height","1000px"); // Pieņemsim, ka šis elements nekad nebūs garāks par 1000px. P.S. Vajag anim?cijas ;)
+    $("#main").css("max-height","1200px"); // Pieņemsim, ka šis elements nekad nebūs garāks par 1000px. P.S. Vajag anim?cijas ;)
     canClick=true;
 }
 // Funkcija, kas darbina menu laiku
