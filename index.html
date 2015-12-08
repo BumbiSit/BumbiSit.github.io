@@ -10,7 +10,10 @@
 </head>
 <body>
     <div id="wrap" class="container">
-        <div id="menu">
+        <aside id="side-ad" class="hidden-xs hidden-sm hidden-md">
+            <p>reklāma</p>
+        </aside>
+        <section id="menu">
             <ul>
                 <li id="logo"></li> <!-- Logo menu -->
                 <li><a href="#" data-saturs="news" class="active">Sākums</a></li>
@@ -19,16 +22,19 @@
                 <li><a href="#" data-saturs="contacts">Kontakti</a></li>
                 <li id="time" class="hidden-xs"></li> <!-- Laiks menu -->
             </ul>
-        </div>
-        <div id="main">
-            <div id="content">
+        </section>
+        <section id="main">
+            <div class="row" id="content">
 
             </div>
-        </div>
-        <div id="footer">
+        </section>
+        <aside id="bottom-ad" class="hidden-lg">
+            <p>reklāma</p>
+        </aside>
+        <footer>
             <span>Copyright &copy; 2015 <b>T-News</b></span>
             <span style="float:right;margin-right:30px;"><b>Veidoja:</b> Silvestrs Prancāns</span>
-        </div>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -38,7 +44,7 @@
 ---------------------------------------- PASKAIDROJUMS IR JS FAILĀ! ---------------------------------->
 <template name="news">
     <h1>Tehnoloģiju blogs</h1>
-    <div class="article">
+    <article class="article col-md-12">
         <div class="title">Jaunais Samsung Galaxy S6 ir iznācis!</div>
         <div class="content">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis culpa,
@@ -77,16 +83,12 @@
                 magnam maxime modi molestias nulla numquam odit officia placeat quasi, quisquam saepe totam
                 vel vitae voluptas voluptates. Exercitationem minus, similique.
             </div>
-            <div>Assumenda, consequatur dolor dolores esse hic labore, magni obcaecati omnis possimus quia
-                reiciendis sunt totam vitae! Ad delectus excepturi id in, laborum libero nemo neque quaerat
-                recusandae saepe voluptate voluptatibus!
-            </div>
         </div>
         <div class="date">
             Ievietots: 26.09.2015 21:57
         </div>
-    </div>
-    <div class="article">
+    </article>
+    <article class="article col-md-12">
         <div class="title">Jaunais blogs!</div>
         <div class="content">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis culpa,
@@ -101,11 +103,11 @@
         <div class="date">
             Ievietots: 26.09.2015 21:57
         </div>
-    </div>
+    </article>
 </template>
 <template name="gallery">
     <h1>Tālruņu galerija</h1>
-    <div class="gallery">
+    <article class="gallery col-md-12">
         <div class="name">Galaxy S6</div>
         <div class="container_">
             <ul>
@@ -115,8 +117,8 @@
                 <li><a target="_blank" href="https://cdn3.vox-cdn.com/thumbor/V9_7LGTsGGq6Jmj-dcclDLWFC8s=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557966/verge-016.0.jpg"><img src="https://cdn3.vox-cdn.com/thumbor/V9_7LGTsGGq6Jmj-dcclDLWFC8s=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3557966/verge-016.0.jpg" width="200px"/></a></li>
             </ul>
         </div>
-    </div>
-    <div class="gallery">
+    </article>
+    <article class="gallery col-md-12">
         <div class="name">Apple iPhone 6</div>
         <div class="container_">
             <ul>
@@ -125,7 +127,7 @@
                 <li><a target="_blank" href="https://cdn2.vox-cdn.com/thumbor/emFCqprqkSmutffDFc6rR8jmZ2E=/0x122:2039x1269/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46483548/iphone-verge-stock-1191.0.0.jpg"><img src="https://cdn2.vox-cdn.com/thumbor/emFCqprqkSmutffDFc6rR8jmZ2E=/0x122:2039x1269/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46483548/iphone-verge-stock-1191.0.0.jpg" width="200px"/></a></li>
             </ul>
         </div>
-    </div>
+    </article>
 </template>
 <template name="survey">
     <h1>Anketa</h1>
@@ -196,42 +198,46 @@
 </template>
 <template name="contacts">
     <h1>Kontaktinformācija</h1>
-    <table>
-        <tr>
-            <td width="50%" style="color:#777349;">
-                <table>
-                    <tr>
-                        <td>Vārds:</td>
-                        <td>Silvestrs</td>
-                    </tr>
-                    <tr>
-                        <td>Uzvārds:</td>
-                        <td>Prancāns</td>
-                    </tr>
-                    <tr>
-                        <td>Iestāde:</td>
-                        <td>Rīgas Valsts tehnikums</td>
-                    </tr>
-                    <tr>
-                        <td>Adrese:</td>
-                        <td>Krišjāņa Valdemāra iela 1C, Centra rajons, Rīga, Latvia</td>
-                    </tr>
-                    <tr>
-                        <td>Tel. nr.:</td>
-                        <td>+371 20207288</td>
-                    </tr>
-                    <tr>
-                        <td>E-pasts:</td>
-                        <td>silvestrspr@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Darba laiks:</td>
-                        <td>8:30 - 15:30</td>
-                    </tr>
-                </table>
-            </td>
-            <td width="50%"><iframe width="400" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_x0CZ9rP7kYRFZgKieKHFnE&key=AIzaSyCDIXheC6HXSxg1IeQXPwKZRmYJcqoFO0A" allowfullscreen></iframe></td>
-        </tr>
-    </table>
+    <div class="col-md-6 col-sm-12">
+        <table>
+            <tr>
+                <td width="50%" style="color:#777349;">
+                    <table>
+                        <tr>
+                            <td>Vārds:</td>
+                            <td>Silvestrs</td>
+                        </tr>
+                        <tr>
+                            <td>Uzvārds:</td>
+                            <td>Prancāns</td>
+                        </tr>
+                        <tr>
+                            <td>Iestāde:</td>
+                            <td>Rīgas Valsts tehnikums</td>
+                        </tr>
+                        <tr>
+                            <td>Adrese:</td>
+                            <td>Krišjāņa Valdemāra iela 1C, Centra rajons, Rīga, Latvia</td>
+                        </tr>
+                        <tr>
+                            <td>Tel. nr.:</td>
+                            <td>+371 20207288</td>
+                        </tr>
+                        <tr>
+                            <td>E-pasts:</td>
+                            <td>silvestrspr@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Darba laiks:</td>
+                            <td>8:30 - 15:30</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <iframe width="400" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ_x0CZ9rP7kYRFZgKieKHFnE&key=AIzaSyCDIXheC6HXSxg1IeQXPwKZRmYJcqoFO0A" allowfullscreen></iframe>
+    </div>
 </template>
 </html>
