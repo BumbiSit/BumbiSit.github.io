@@ -189,18 +189,17 @@ a{
 /*--- ANKETA ---*/
 #content table#survey{
     color:#777349;
-    width:70%;
     margin-left:auto;
     margin-right:auto;
 }
-#content table#survey tbody tr:hover{
-    background-color:#DDD;
+#content table#survey tr td{
+    vertical-align: center;
 }
 #content table#survey tr td:first-child{
     text-align: right;
     padding-right:10px;
 }
-/* -------------------------- */
+/* -------------------------- 
 
 input[type=button].styled{
     color:#777349;
@@ -241,16 +240,16 @@ footer span{
     z-index: 10;
     width:150px;
     height: 500px;
-    background: grey;
+    background: #ddd;
     margin-left: -170px;
 }
 #bottom-ad{
     width: 100%;
     height: 100px;
-    background: grey;
+    background: #ddd;
 }
 #bottom-ad p{
-    color: white;
+    color: #00BDF2;
     font-size: 40px;
     text-align: center;
     line-height: 100px;
@@ -263,7 +262,7 @@ footer span{
     -moz-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
-    color: white;
+    color: #00BDF2;
     font-size:50px;
     text-align: center;
     width:100%;

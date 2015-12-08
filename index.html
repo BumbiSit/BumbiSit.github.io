@@ -9,11 +9,11 @@
     <title>Sākums | T-News</title>
 </head>
 <body>
-    <div id="wrap" class="container">
+    <main id="wrap" class="container">
         <aside id="side-ad" class="hidden-xs hidden-sm hidden-md">
             <p>reklāma</p>
         </aside>
-        <section id="menu">
+        <nav id="menu">
             <ul>
                 <li id="logo"></li> <!-- Logo menu -->
                 <li><a href="#" data-saturs="news" class="active">Sākums</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="#" data-saturs="contacts">Kontakti</a></li>
                 <li id="time" class="hidden-xs"></li> <!-- Laiks menu -->
             </ul>
-        </section>
+        </nav>
         <section id="main">
             <div class="row" id="content">
 
@@ -35,7 +35,7 @@
             <span>Copyright &copy; 2015 <b>T-News</b></span>
             <span style="float:right;margin-right:30px;"><b>Veidoja:</b> Silvestrs Prancāns</span>
         </footer>
-    </div>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="./js/main.js" type="text/javascript"></script>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="date">
-            Ievietots: 26.09.2015 21:57
+            Ievietots: <time>26.09.2015 21:57</time>
         </div>
     </article>
     <article class="article col-md-12">
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="date">
-            Ievietots: 26.09.2015 21:57
+            Ievietots: <time>26.09.2015 21:57</time>
         </div>
     </article>
 </template>
@@ -131,70 +131,72 @@
 </template>
 <template name="survey">
     <h1>Anketa</h1>
-    <form id='survey'>
-        <table id="survey" cellpadding="10px" cellspacing="0px">
-            <thead>
-                <tr>
-                    <td colspan="2" style="text-align:left;">Aizpildiet anketu un izsakiet viedokli par mums! Pateicoties Jums, mēs varēsim uzlabot sevi attiecīgi pēc Jūsu izteiktās kritikas. <br> Lūdzams izteikt konstruktīvu kritiku!</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vārds</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Uzvārds</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>E-pasts</td>
-                    <td><input type="email" /></td>
-                </tr>
-                <tr>
-                    <td>Pasta Indekss</td>
-                    <td>
-                        <input type="text" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Kāds ir Jūsu vecums?</td>
-                    <td>
-                        <input type="number" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>Uz cik Jūs novērtētu šo vietni?</td>
-                    <td>
-                        <select>
-                            <option selected>Izvēlieties variantu</option>
-                            <option>1 (Nav jēga)</option>
-                            <option>2 (Graujoši)</option>
-                            <option>3 (Ļoti slikti)</option>
-                            <option>4 (Slikti)</option>
-                            <option>5 (Vidēji)</option>
-                            <option>6 (Gandrīz labi)</option>
-                            <option>7 (Labi)</option>
-                            <option>8 (Ļoti labi)</option>
-                            <option>9 (Teicami)</option>
-                            <option>10 (Izcili)</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Izsakiet savu viedokli rakstiski</td>
-                    <td>
-                        <textarea cols="30" rows="10" style="resize:vertical"></textarea>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2"><input class="styled" type="submit" value="Iesūtīt"/></td>
-                </tr>
-            </tfoot>
-        </table>
-    </form>
+    <div class="col-md-9 col-md-offset-1">
+        <form id='survey'>
+            <table id="survey" class="table table-hover " cellpadding="10px" cellspacing="0px">
+                <thead>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">Aizpildiet anketu un izsakiet viedokli par mums! Pateicoties Jums, mēs varēsim uzlabot sevi attiecīgi pēc Jūsu izteiktās kritikas. <br> Lūdzams izteikt konstruktīvu kritiku!</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vārds</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Uzvārds</td>
+                        <td><input type="text" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>E-pasts</td>
+                        <td><input type="email" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Pasta Indekss</td>
+                        <td>
+                            <input type="text" class="form-control"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kāds ir Jūsu vecums?</td>
+                        <td>
+                            <input type="number" class="form-control"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Uz cik Jūs novērtētu šo vietni?</td>
+                        <td>
+                            <select class="form-control">
+                                <option selected>Izvēlieties variantu</option>
+                                <option>1 (Nav jēga)</option>
+                                <option>2 (Graujoši)</option>
+                                <option>3 (Ļoti slikti)</option>
+                                <option>4 (Slikti)</option>
+                                <option>5 (Vidēji)</option>
+                                <option>6 (Gandrīz labi)</option>
+                                <option>7 (Labi)</option>
+                                <option>8 (Ļoti labi)</option>
+                                <option>9 (Teicami)</option>
+                                <option>10 (Izcili)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Izsakiet savu viedokli rakstiski</td>
+                        <td>
+                            <textarea cols="30" rows="10" style="resize:vertical" class="form-control"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><input class="btn btn-default" type="submit" value="Iesūtīt"/></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
 </template>
 <template name="contacts">
     <h1>Kontaktinformācija</h1>
