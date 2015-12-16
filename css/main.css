@@ -28,70 +28,120 @@ a{
 /* ----[ GALVENĀ IZVĒLNE]---- */
 #menu{
     width:100%;
-    height: 60px;
+    height: auto;
     background-color:#FFF;
     border-left:8px solid #00BDF2;
     border-right:8px solid #00BDF2;
     box-sizing: border-box;
+    min-height: 60px;
 }
 #menu ul{
     margin:0;
     padding:0;
     list-style-type: none;
+    height: auto;
+    overflow: hidden;
 }
-#menu ul li{
-    float:left;
+@media (min-width: 768px) {
+    #menu ul{
+        overflow: initial !important;
+    }
+    #menu ul li{
+        float:left;
+    }
+    /* --- LOGO */
+    #menu ul li#logo{
+        height:60px;
+        width:100px;
+        background-image:url(images/logo_clean.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        transition: background-color 5s; /* EASTER EGG */
+    }
+    #menu ul li#logo:active{
+        background-color:#444349; /* EASTER EGG */
+    }
+    /* ------- */
+    /* - LAIKS */
+    #menu ul li#time{
+        float:right;
+        color:#FFF;
+        font-size:30px;
+        padding-left:30px;
+        padding-right:20px;
+        height: 100%;
+        background-color: #00BDF2;
+        line-height: 60px;
+        opacity:0;
+        transition: opacity 1s;
+        border-left:10px solid #444349;
+    }
+    /* ------- */
+    #menu ul li a{
+        color:#00BDF2;
+        line-height:60px;
+        padding:21px;
+        padding-bottom:22px;
+        font-weight: 500;
+        transition:all 0.3s;
+    }
+    #menu ul li a.active{
+        color:#FFF;
+        background-color:#00BDF2;
+        padding-bottom:57px;
+        padding-top:26px;
+        text-decoration: none !important;
+    }
+    #menu ul li a:not(.active):hover{
+        color:#FFF;
+        background-color:#00BDF2;
+        padding-bottom:26px;
+        padding-top:26px;
+        text-decoration: none !important;
+    }
 }
-/* --- LOGO */
-#menu ul li#logo{
-    height:60px;
-    width:100px;
-    background-image:url(images/logo_clean.png);
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    transition: background-color 5s; /* EASTER EGG */
+/* - MOBILE */
+@media (max-width: 768px) {
+    #menu ul{
+        max-height: 0px;
+        transition: max-height 0.5s;
+    }
+    #menu ul.active{
+        max-height: 300px;
+    }
+    #menu ul li{
+        text-align: center;
+        background-color:white;
+        border-bottom:1px solid #00BDF2;
+    }
+    #menu ul li a{
+        display: inline-block;
+        width:100%;
+        color:#00BDF2;
+        line-height:60px;
+        font-weight: 600;
+        font-size:16px;
+    }
+    #menu ul li a.active{
+        background-color:#00BDF2;
+        color:white;
+        text-decoration: none;
+    }
 }
-#menu ul li#logo:active{
-    background-color:#444349; /* EASTER EGG */
-}
-/* ------- */
-/* - LAIKS */
-#menu ul li#time{
-    float:right;
-    color:#FFF;
-    font-size:30px;
-    padding-left:30px;
-    padding-right:20px;
+#mobile-menu{
+    width:100%;
     height: 100%;
-    background-color: #00BDF2;
-    line-height: 60px;
-    opacity:0;
-    transition: opacity 1s;
-    border-left:10px solid #444349;
-}
-/* ------- */
-#menu ul li a{
+    padding-left:20px;
+    padding-right: 20px;
+    font-size:24px;
     color:#00BDF2;
+    border-bottom:1px solid #00BDF2;
+    cursor:pointer;
+}
+#mobile-menu span{
+    
     line-height:60px;
-    padding:21px;
-    padding-bottom:22px;
-    font-weight: 500;
-    transition:all 0.3s;
-}
-#menu ul li a.active{
-    color:#FFF;
-    background-color:#00BDF2;
-    padding-bottom:57px;
-    padding-top:26px;
-    text-decoration: none !important;
-}
-#menu ul li a:not(.active):hover{
-    color:#FFF;
-    background-color:#00BDF2;
-    padding-bottom:26px;
-    padding-top:26px;
-    text-decoration: none !important;
 }
 /* -------------------------- */
 

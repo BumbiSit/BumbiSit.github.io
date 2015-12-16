@@ -11,6 +11,7 @@
 var timeInit=false;
 var timeTick=0;
 var canClick=true;
+var timer;
 $(document).ready(function(){
     loadPage("news"); // Pēc noklusējuma ielādēs "news" saturu
 
@@ -29,8 +30,10 @@ $(document).ready(function(){
         var _this = this;
         setTimeout(function(){loadPage($(_this).data("saturs"));},800);
     });
-
-    setInterval(updateTime,1000); //Uzsākam atkārtoto taimeri, kurš atjaunos laiku
+    $("#mobile-menu").click(function() {
+        $("#menu ul").toggleClass("active");
+    });
+    timer = setInterval(updateTime,1000); //Uzsākam atkārtoto taimeri, kurš atjaunos laiku
 
     //Validācija
     

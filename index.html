@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
     <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Sākums | T-News</title>
@@ -14,8 +14,11 @@
             <p>reklāma</p>
         </aside>
         <nav id="menu">
+            <div id="mobile-menu" class="visible-xs-block">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </div>
             <ul>
-                <li id="logo"></li> <!-- Logo menu -->
+                <li id="logo" class="hidden-xs"></li> <!-- Logo menu -->
                 <li><a href="#" data-saturs="news" class="active">Sākums</a></li>
                 <li><a href="#" data-saturs="gallery">Galerija</a></li>
                 <li><a href="#" data-saturs="survey">Anketa</a></li>
@@ -36,8 +39,8 @@
             <span style="float:right;margin-right:30px;"><b>Veidoja:</b> Silvestrs Prancāns</span>
         </footer>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
 </body>
 <!-------------------------------------- ŠEIT IR VISS LAPU SATURS --------------------------------------
