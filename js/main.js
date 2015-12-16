@@ -41,7 +41,7 @@ $(document).ready(function(){
 // Funkcija, kas ielādēs html no failiem (nu jau <template> elementiem) un ieliks to content elementē.
 function loadPage(pageName){
     $("#main > #content").html($("template[name="+pageName+"]").html());
-    $("#main").css("max-height","1200px"); // Pieņemsim, ka šis elements nekad nebūs garāks par 1000px. P.S. Vajag anim?cijas ;)
+    $("#main").css("max-height","1400px"); // Pieņemsim, ka šis elements nekad nebūs garāks par 1000px. P.S. Vajag anim?cijas ;)
     canClick=true;
 }
 // Funkcija, kas darbina menu laiku
@@ -49,7 +49,7 @@ function updateTime(){
     //Pirmajā taimera notikšanā, anim?t pulsteni uz redzamu
     if (!timeInit){
         timeInit=true;
-        $("li#time").css("opacity",1);
+        $("li#time").css({"opacity":1,"max-width":"150px","padding-left":"30px","padding-right":"20px"});
     }
     var date = new Date(); //Date objekts, ar kuru var dabūt laiku
     var h = date.getHours();
