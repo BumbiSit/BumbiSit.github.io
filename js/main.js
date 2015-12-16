@@ -33,11 +33,25 @@ $(document).ready(function(){
     $("#mobile-menu").click(function() {
         $("#menu ul").toggleClass("active");
     });
+    $("#menu ul li#profile").click(function(){
+        goToLog();
+        $("#loginModal").modal();
+    });
     timer = setInterval(updateTime,1000); //Uzsākam atkārtoto taimeri, kurš atjaunos laiku
 
     //Validācija
     
 });
+function goToReg()
+{
+    $("#loginModal .modal-footer button.btn-primary").html("Reģistrēties");
+    $("#loginModal .modal-body").html($("template[name=register]").html());
+}
+function goToLog()
+{
+    $("#loginModal .modal-footer button.btn-primary").html("Ieiet");
+    $("#loginModal .modal-body").html($("template[name=login]").html());
+}
 // Funkcija, kas ielādēs html no failiem (nu jau <template> elementiem) un ieliks to content elementē.
 function loadPage(pageName){
     $("#main > #content").html($("template[name="+pageName+"]").html());
