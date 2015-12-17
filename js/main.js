@@ -41,7 +41,7 @@ $(document).ready(function(){
             if ($(window).width() < 992) {
                 $("#menu ul li a.active").removeClass("active");
                 $("#main > #content").html($("template[name='profile']").html());
-                
+                $("#profilePic #nick").html(nickname);
                 return 0;
             }
             $("#main").css("max-height","0px");
