@@ -20,12 +20,12 @@
             </div>
             <ul>
                 <li id="logo" class="hidden-xs"></li> <!-- Logo menu -->
-                <li><a href="#" data-saturs="news" class="active">Sākums</a></li>
+                <li><a href="#" id="first" data-saturs="news" class="active">Sākums</a></li>
                 <li><a href="#" data-saturs="gallery">Galerija</a></li>
                 <li><a href="#" data-saturs="survey">Anketa</a></li>
                 <li><a href="#" data-saturs="contacts">Kontakti</a></li>
                 <li id="time" class="hidden-xs"></li> <!-- Laiks menu -->
-                <li id="profile"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Autorizēties</li>
+                <li id="profile"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span id="nickname">Autorizēties</span></li>
             </ul>
         </nav>
         <section id="main">
@@ -263,12 +263,12 @@
 <template name="login">
     <form>
         <div class="form-group">
-            <label for="exampleInputEmail1">E-pasts</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-pasts">
+            <label for="nickname">Lietotājvārds</label>
+            <input type="text" class="form-control" id="nickname" placeholder="Lietotājvārds">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Parole</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Parole">
+            <label for="pass">Parole</label>
+            <input type="password" class="form-control" id="pass" placeholder="Parole">
         </div>
         <div class="checkbox">
             <label>
@@ -475,6 +475,51 @@
         <button type="button" onclick="goToLog()" class="btn btn-link">Esmu jau reģistrējies.</button>
     </form>
 </template>
+<template name="profile">
+    <h1>Profils</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="profilePic">
+                <img src="https://www.kiu.edu.pk/img/profile-default.gif" width="100%" alt="Profile pic">
+                <div id='nick'>Test</div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table width="70%" style="font-size:16px;">
+                <tr>
+                    <td>Lietotājvārds:</td>
+                    <td>Test</td>
+                </tr>
+                <tr>
+                    <td>Vārds:</td>
+                    <td>Silvestrs</td>
+                </tr>
+                <tr>
+                    <td>Uzvārds:</td>
+                    <td>Prancāns</td>
+                </tr>
+                <tr>
+                    <td>Dzimšanas dati:</td>
+                    <td>05.12.1990</td>
+                </tr>
+                <tr>
+                    <td>E-pasts:</td>
+                    <td>silvestrspr@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tel. nr.:</td>
+                    <td>+371 20207288</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button style='float:right;' onclick="logout()" type="button" class="btn btn-danger">Dzēst profilu</button>
+        </div>
+    </div>
+    <br>
+</template>
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
   <div class="modal-dialog" role="document">
@@ -488,7 +533,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Aizvērt</button>
-        <button type="button" class="btn btn-primary">Ieiet</button>
+        <button type="button" onclick="login()" class="btn btn-primary">Ieiet</button>
       </div>
     </div>
   </div>

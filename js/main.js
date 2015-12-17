@@ -12,6 +12,8 @@ var timeInit=false;
 var timeTick=0;
 var canClick=true;
 var timer;
+var regLog=0;
+var nickname="";
 $(document).ready(function(){
     loadPage("news"); // Pēc noklusējuma ielādēs "news" saturu
 
@@ -34,21 +36,69 @@ $(document).ready(function(){
         $("#menu ul").toggleClass("active");
     });
     $("#menu ul li#profile").click(function(){
+        if(nickname!=""){
+            if(!canClick) return 0;
+            if ($(window).width() < 992) {
+                $("#menu ul li a.active").removeClass("active");
+                $("#main > #content").html($("template[name='profile']").html());
+                
+                return 0;
+            }
+            $("#main").css("max-height","0px");
+            canClick=false;
+            $("#menu ul li a.active").removeClass("active");
+            setTimeout(function(){loadPage("profile");$("#profilePic #nick").html(nickname);},800);
+
+            return;
+        }
         goToLog();
         $("#loginModal").modal();
     });
     timer = setInterval(updateTime,1000); //Uzsākam atkārtoto taimeri, kurš atjaunos laiku
-
-    //Validācija
     
 });
+function logout()
+{
+
+    nickname="";
+    $("li#profile span#nickname").html("Autorizēties");
+    
+    if ($(window).width() < 992) {
+        $("#main > #content").html($("template[name='news']").html());
+        $("#menu ul li a#first").addClass("active");
+        return 0;
+    }
+    $("#main").css("max-height","0px");
+    canClick=false;
+    $("#menu ul li a.active").removeClass("active");
+    setTimeout(function(){loadPage("news");$("#menu ul li a#first").addClass("active");},800);
+}
+function login()
+{
+    if(regLog){
+        alert("Reģistrācija nepastāv!");
+    }else{
+        var niks = $("input#nickname").val();
+        var parole = $("input#pass").val();
+        if(niks!=""&&parole!=""){
+            if(niks.length>3 && niks.length<10){
+                nickname=$("input#nickname").val();
+                $("li#profile span#nickname").html(nickname);
+
+                $("#loginModal").modal('hide');
+            }else alert("Lietotājvārds nevar būt garāks par 10 un īsāks par 4 simboliem.");
+        }else alert("Ievadiet lietotājvārdu un paroli!");
+    }
+}
 function goToReg()
 {
+    regLog=1;
     $("#loginModal .modal-footer button.btn-primary").html("Reģistrēties");
     $("#loginModal .modal-body").html($("template[name=register]").html());
 }
 function goToLog()
 {
+    regLog=0;
     $("#loginModal .modal-footer button.btn-primary").html("Ieiet");
     $("#loginModal .modal-body").html($("template[name=login]").html());
 }
