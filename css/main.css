@@ -144,6 +144,13 @@ a{
         color:white;
         text-decoration: none;
     }
+    #menu ul li#profile{
++        width:100%;
++        color:#FFF;
++        background-color: #00BDF2;
++        line-height: 60px;
++        cursor:pointer;
++    }
 }
 #mobile-menu{
     width:100%;
